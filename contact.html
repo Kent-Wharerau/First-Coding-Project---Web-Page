@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="contact.css" rel="stylesheet" />
+        <title>Contact Me</title>
+
+    </head>
+
+    <body>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="https://moxfield.com/users/Chiefberkey">Decklists</a>
+            <i class="fa-brands fa-facebook fa-bounce fa-2x"></i>
+            <i class="fa-brands fa-instagram fa-bounce fa-2x"></i>
+            <i class="fa-brands fa-linkedin fa-bounce fa-2x"></i>
+        </nav>
+
+        <br>
+
+        <form action="mailto:kent.wharerau@gmail.com" method="post" enctype="text/plain">
+
+            <fieldset>
+                <legend>Want a game?</legend>
+                <br>
+
+                <label>Name:</lebal>
+                <input type="text" name="name" required placeholder="e.g. John Doe"/>
+                <br><br>
+                        
+                <label>Email:</label>
+                <input type="email" name="email" required placeholder="e.g John.Doe@gmail.com" />
+                <br><br>
+            
+                <label style="color: white;" >Subject:</label><br>
+
+                <input type="radio" id="sales" name="subject" value="sales"/>
+                <label for="sales">Play a Game</label><br>
+
+                <input type="radio" id="support" name="subject" value="support"/>
+                <label for="support">Advice</label><br>
+
+                <input type="radio" id="other" name="subject" value="other"/>
+                <label for="other">Other</label><br><br>
+
+                <label>Message:</label>
+                <textarea name="message" placeholder="Howdy"></textarea>
+                <br><br>
+
+                <input type="submit" value="Submit"/><br>
+            </fieldset>
+
+        </form>
+
+    </body>
+
+</html>

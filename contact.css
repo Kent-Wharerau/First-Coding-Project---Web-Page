@@ -1,0 +1,53 @@
+* { 
+    box-sizing: border-box;
+    margin:0;
+    padding:0; 
+}
+    /* Resets default margin applied by browsers to all elements, ensuring consistent layout across devices */
+
+body {
+    background-image: url(images/theme.jpg);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin:0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: red; 
+}
+
+nav a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: black;
+    color: white;
+}
+
+fieldset {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:white;
+}
+
+fieldset > legend {
+    font-size: 40px;
+}
+
+@media screen and (max-width:768px) {
+    nav, main {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    nav {
+        font-size:12px;
+    }
+
+}

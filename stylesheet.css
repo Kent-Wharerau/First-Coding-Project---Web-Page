@@ -1,0 +1,99 @@
+* { 
+    box-sizing: border-box;
+    margin: 2px;;
+    padding:0; 
+}
+
+
+body {
+    background-image: url(images/theme.jpg);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin:0;
+}
+
+header {
+    padding:45px;
+    text-align: center;
+    font-size: x-large;
+    background-color: black;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: red; 
+}
+
+nav a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: black;
+    color: white;
+}
+
+main {
+    display:flex;
+    color: white;
+}
+
+#left {
+    flex-basis: 50%;
+    text-align: center;
+    padding: 20px;
+    height: 1250px;
+}
+
+#right {
+    flex-basis: 50%;
+    text-align: center;
+    padding: 20px;
+    height: 1250px;
+}
+
+
+.imgph {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    width:300;
+    height:350;
+}
+
+.imgph {
+    margin: 50px auto;
+    width: 250px;
+    height: 350px;
+    line-height: 300px;
+    transition: .3s ease;
+}
+
+.imgph:hover {
+    transform: scale(1.4);
+    -webkit-transform:scale(1.4);
+    -ms-transform:scale(1.4);
+}
+
+h2 {
+    font-size: xx-large;
+}
+
+
+@media screen and (max-width:768px) {
+    nav, main {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    nav {
+        font-size:12px;
+    }
+
+}
